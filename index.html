@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            veryDarkBlue: 'hsl(233, 47%, 7%)',
+            darkDesBlue: 'hsl(244, 38%, 16%)',
+            softViolet: 'hsl(277, 64%, 61%)',
+            white: 'hsl(0, 0%, 100%)',
+            pwhite: 'hsla(0, 0%, 100%, 0.75)',
+            swhite: 'hsla(0, 0%, 100%, 0.6)',
+
+          },
+          fontFamily: {
+            'inter': ['Inter'],
+            'lexend': ['Lexend Deca'],
+          },
+        }
+      }
+    }
+  </script>
+  <title>Frontend Mentor | Stats preview card component</title>
+
+
+</head>
+
+
+
+<body class="bg-veryDarkBlue ">
+  <div class="w-full min-h-screen flex items-center justify-center">
+    <div
+      class="bg-darkDesBlue flex flex-col-reverse lg:flex-row rounded-xl mx-5 lg:mx-0 overflow-hidden max-w-[535px] lg:max-w-[80%] font-lexend">
+      <div class="lg:pt-12 lg:px-20 w-1/2">
+        <h1 class="text-white text-4xl lg:py-4 font-inter font-bold">Get <span class="text-softViolet">insights</span>
+          that help
+          your
+          business
+          grow.
+        </h1>
+        <p class="text-pwhite py-4 mr-12">Discover the benefits of data analytics and make better decisions regarding
+          revenue,
+          customer
+          experience, and overall efficiency.</p>
+        <div class="text-white lg:flex-row flex-col flex justify-between lg:mr-14 lg:pt-20 tracking-wider uppercase ">
+          <div class="">
+            <h2 class="text-xl font-bold mb-1">10k+</h2>
+            <p class=" text-swhite text-xs">companies</p>
+          </div>
+          <div class="">
+            <h2 class="text-xl font-bold mb-1">314</h2>
+            <p class=" text-swhite text-xs">templates</p>
+          </div>
+          <div class="">
+            <h2 class="text-xl font-bold mb-1">12m+</h2>
+            <p class="text-swhite text-xs">queries</p>
+          </div>
+        </div>
+      </div>
+      <div class="relative">
+        <picture class="">
+          <source srcset="./images/image-header-desktop.jpg" media="(max-width: 1024px)" type="image/jpeg">
+          <img class="" src="./images/image-header-mobile.jpg" alt="Team members" class="object-cover object-center">
+        </picture>
+        <div class="absolute top-0 bottom-0 left-0 right-0 bg-softViolet/70 mix-blend-multiply "></div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
